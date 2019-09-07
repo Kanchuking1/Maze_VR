@@ -14,6 +14,12 @@ public class Maze : MonoBehaviour
     public IntVector2 size;
     [Range(0f,1f)]
     public float doorProbablity;
+    private MazeDirection currentDirection;
+
+	private void Look (MazeDirection direction) {
+		transform.localRotation = direction.ToRotation();
+		currentDirection = direction;
+	}
 
     private MazeCell[,] cells;
     private List<MazeRoom> rooms = new List<MazeRoom>();

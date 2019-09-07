@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour {
 	public Maze mazePrefab;
 	private Maze mazeInstance;
     public Player playerPrefab;
+    public Camera cam;
     private Player playerInstance;
 
     private void Start () {
@@ -20,10 +21,14 @@ public class GameManager : MonoBehaviour {
 
     //Begin the game
     private IEnumerator BeginGame () {
+        cam.clearFlags = CameraClearFlags.Skybox;
+        cam.rect = new Rect(0f, 0f, 1f, 1f);
         mazeInstance = Instantiate(mazePrefab) as Maze;
         yield return StartCoroutine(mazeInstance.Generate());
         playerInstance = Instantiate(playerPrefab) as Player;
         playerInstance.SetLocation(mazeInstance.GetCell(mazeInstance.RandomCoordinates));
+        cam.clearFlags = CameraClearFlags.Depth;
+        cam.rect = new Rect(0f, 0f, 0.5f, 0.5f);
     }
 
     //Stop all Coroutines and destroy all the objects and begin the game again
