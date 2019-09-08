@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class MazeCell : MonoBehaviour
 {
@@ -15,6 +16,24 @@ public class MazeCell : MonoBehaviour
         room.Add(this);
         //Debug.Log("Setting Room Material to " + room.settings.floorMaterial.name);
         transform.GetChild(0).GetComponent<Renderer>().material = room.settings.floorMaterial;
+    }
+
+    public void OnPlayerEntered()
+    {
+        room.Show();
+        for (int i = 0; i < edges.Length; i++)
+        {
+            edges[i].OnPlayerEntered();
+        }
+    }
+
+    public void OnPlayerExited()
+    {
+        room.Hide();
+        for (int i = 0; i < edges.Length; i++)
+        {
+            edges[i].OnPlayerExited();
+        }
     }
 
     public bool isFullyInitialized {
@@ -39,7 +58,7 @@ public class MazeCell : MonoBehaviour
     {
         get
         {
-            int skips = Random.Range(0, MazeDirections.Count - initializedEdgeCount);
+            int skips = UnityEngine.Random.Range(0, MazeDirections.Count - initializedEdgeCount);
             for (int i = 0; i < MazeDirections.Count; i++)
             {
                 if (edges[i] == null)
@@ -53,5 +72,15 @@ public class MazeCell : MonoBehaviour
             }
             throw new System.Exception("Maze has no uninitialized edges!");
         }
+    }
+
+    public void Show()
+    {
+        gameObject.SetActive(true);
+    }
+
+    public void Hide()
+    {
+        gameObject.SetActive(false);
     }
 }

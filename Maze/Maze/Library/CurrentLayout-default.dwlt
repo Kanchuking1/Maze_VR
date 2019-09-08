@@ -44,10 +44,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 681, y: 494}
+  m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 101
+  controlID: 107
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,8 +93,8 @@ MonoBehaviour:
     y: 0
     width: 310
     height: 450
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 222}
+  m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -215,7 +215,7 @@ MonoBehaviour:
     y: 0
     width: 1253
     height: 731
-  m_MinSize: {x: 404, y: 494}
+  m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
   controlID: 36
@@ -240,8 +240,8 @@ MonoBehaviour:
     y: 0
     width: 1253
     height: 450
-  m_MinSize: {x: 404, y: 222}
-  m_MaxSize: {x: 8004, y: 4022}
+  m_MinSize: {x: 406, y: 222}
+  m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
   controlID: 37
 --- !u!114 &11
@@ -310,20 +310,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials/Maze/RoomSettings
+    - Assets/Materials
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Materials/Maze/RoomSettings
+  - Assets/Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\91993\Desktop\Desktop 2.0\Game Dev\Maze_VR\Maze\Maze
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 88340000
-    m_LastClickedID: 13448
-    m_ExpandedIDs: 00000000003200007833000096360000f0380000f2380000
+    m_SelectedIDs: 76330000
+    m_LastClickedID: 13174
+    m_ExpandedIDs: 00000000fe3100007633000094360000f4380000f6380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -351,7 +351,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000032000078330000f0380000f2380000
+    m_ExpandedIDs: 00000000fe310000f4380000f6380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -472,9 +472,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f2370000
-      m_LastClickedID: 14322
-      m_ExpandedIDs: 9644feff74fbffff
+      m_SelectedIDs: 044afdff
+      m_LastClickedID: -177660
+      m_ExpandedIDs: 4ebafdff323d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -527,16 +527,16 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: eb9209fdf4049a74b8eab83cc4806919
   m_Gizmos: 1
-  m_SceneIsLit: 1
+  m_SceneIsLit: 0
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.011316, y: -2.1840286, z: 7.4385633}
+    m_Target: {x: 1.4186106, y: 2.9870617, z: -8.058805}
     speed: 2
-    m_Value: {x: -3.011316, y: -2.1840286, z: 7.4385633}
+    m_Value: {x: 1.4186106, y: 2.9870617, z: -8.058805}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -547,7 +547,7 @@ MonoBehaviour:
   m_SceneViewState:
     showFog: 1
     showMaterialUpdate: 0
-    showSkybox: 1
+    showSkybox: 0
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
@@ -557,25 +557,25 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 1
-      speed: 2
-      m_Value: 1
-    zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
+    zGrid:
+      m_Target: 1
+      speed: 2
+      m_Value: 1
   m_Rotation:
     m_Target: {x: 0, y: 1, z: 0, w: 0}
     speed: 2
     m_Value: {x: 0, y: 1, z: 0, w: 0}
   m_Size:
-    m_Target: 45.643227
+    m_Target: 60.027298
     speed: 2
-    m_Value: 45.643227
+    m_Value: 60.027298
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
